@@ -7,7 +7,9 @@ import tkinter as tk
 class Calculator(tk.Tk):
     def __init__(self):
         super().__init__()
+        icon_path = 'calculator.ico'
         self.title('Calculator')
+        self.iconbitmap(icon_path)
         self.geometry('320x480')
         self.resizable(0,0)
         self.result=tk.Entry(self,font=('Arial',36),bg='orange')
